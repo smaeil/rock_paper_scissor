@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rock Paper Scissors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <p>Welcome to the game! Please start the game by picking on Item.</p>
+            <hr>
+            <p style="font-size: 1.4rem;">
+                Game Scores: <span class="space">................</span> Draws: <span id="draws">0</span> 
+                <span class="space">.......</span> ,Wins: <span id="wins">0</span>
+                <span class="space">......</span>,Losses: <span id="losses">0</span>
+            </p>
+            <p style="font-size: 0.8rem;">Game track: <span id="scores" class="scores"></span></p>
+        </header>
+        <main>
+            
+            <div>
+                <section>
+                    <div class="hands opp">
+                        <img src="./assets/icons/paper.png" alt="opponent-hand" id="opponent-hand">
+                    </div>
+                </section>
+                <section id="play-area">
+    
+                    <div class="message" style="flex-direction: column;">
+                        <p>Press PLAY Button to start</p>
+                        <button onclick="play()">PLAY</button>
+                    </div>
+    
+                    <div class="message">
+                        <div class="hand-container">
+                            <img id="l-side" src="" alt="">
+                        </div>
+                        <div class="hand-container">
+                            <img id="r-side" src="" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="message">
+                        <p style="font-size: 3rem;" id="game-message">...</p>
+                    </div>
+                    
+    
+                </section>
+                <section>
+                    <a href="javascript:call(0)">
+                        <div class="hands">
+                            <img src="./assets/icons/rock.png" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:call(1)">
+                        <div class="hands">
+                            <img src="./assets/icons/paper.png" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:call(2)">
+                        <div class="hands">
+                            <img src="./assets/icons/scissors.png" alt="">
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </main>
+        <script src="./assets/script.js" async defer></script>
+    </body>
+</html>
